@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Git Reference</string>
+
+    <string-array name="git_full_list">
+        <item >git config --global user.name “Tanvir Hussain”</item>
+        <item >""</item>
+        <item >git config --global user.email “bappi.ruet.eee@gmail.com”</item>
+        <item >""</item>
+        
+        
+    </string-array>
+
+</resources>
