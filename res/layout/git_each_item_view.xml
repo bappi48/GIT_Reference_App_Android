@@ -14,16 +14,23 @@
         android:layout_height="wrap_content"	
         android:layout_below="@id/viewtop"            
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:typeface="monospace"/>
+    
+    <View 
+        android:id="@+id/view_middle"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/git_command"/>
     
     <TextView 
 		android:id="@+id/git_command_explanation"
-   	    android:layout_below="@id/git_command"       	    
+   	    android:layout_below="@id/view_middle"       	    
         android:layout_width="match_parent"
         android:layout_height="wrap_content"	            
         android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:typeface="serif"/>
     
     <View 
         android:layout_below="@id/git_command_explanation"

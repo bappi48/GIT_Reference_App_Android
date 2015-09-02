@@ -21,7 +21,7 @@ public class CustomListView extends BaseAdapter {
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return list_data.length/2;
+		return (list_data.length/2);
 	}
 
 	@Override
@@ -50,8 +50,8 @@ public class CustomListView extends BaseAdapter {
 		mHolder.txtCommand = (TextView) mView.findViewById(R.id.git_command);
 		mHolder.txtCommandExplanation = (TextView) mView.findViewById(R.id.git_command_explanation);
 		
-		mHolder.txtCommand.setText(list_data[position]);
-		mHolder.txtCommandExplanation.setText(list_data[position+1]);
+		mHolder.txtCommand.setText(list_data[position*2 + 0]);
+		mHolder.txtCommandExplanation.setText(list_data[position*2 + 1]);
 		
 		return mView;
 	}
