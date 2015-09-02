@@ -5,76 +5,98 @@
 
     <string-array name="git_full_list">
         <item >git config --global user.name “Tanvir Hussain”</item>
-        <item >Tips: Set global user name</item>
+        <item >Set global user name</item>
         
         <item >git config --global user.email “bappi.ruet.eee@gmail.com”</item>
-        <item >Tips: Set global user email</item>
+        <item >Set global user email</item>
         
         <item >git config --global mergetool.keepBackup false</item>
-        <item >Tips: Ask mergetool not to keep backup files after merging</item>
+        <item >Ask mergetool not to keep backup files after merging</item>
         
         <item >git config --global merge.tool kdiff3</item>
-        <item >Tips: Set kdiff3 as merge tool</item>
+        <item >Set kdiff3 as merge tool</item>
         
         <item >git config --global diff.tool diffmerge</item>
-        <item >Tips: Set diffmerge as diff tool for GIT. Diffmerge is a very good tool for diff viewing</item>
+        <item >Set diffmerge as diff tool for GIT. Diffmerge is a very good tool for diff viewing</item>
         
         <item >git config --global difftool.diffmerge.cmd "/usr/bin/diffmerge \$LOCAL \$REMOTE"</item>
-        <item >Tips: Configure difftool command</item>
+        <item >Configure difftool command</item>
+        
+        <item >git config --get remote.origin.url</item>
+        <item >Shows the remote URL</item>
+        
+        <item >git config --global color.ui true</item>
+        <item >Configures terminal git command in color mood. Its pretty and helpful</item>
+        
+        <item >git log --graph</item>
+        
+        <item >git log --decorate</item>
+        
+        <item >git stash save "message"</item>
+        <item >Save all uncommitted changes with "message"</item>
         
         <item >git init</item>
-        <item >Tips: Initialize a project for GIT version control</item>
+        <item >Initialize a project for GIT version control</item>
         
         <item >git init [project name / folder name]</item>
-        <item >Tips: Initialize a new project for GIT version control</item>
+        <item >Initialize a new project for GIT version control</item>
         
         <item >git clone [remote repository]</item>
-        <item >Tips: Clones remote repository to local PC</item>
+        <item >Clones remote repository to local PC</item>
         
         <item >git status</item>
-        <item >Tips: Check status of current working branch</item>
+        <item >Check status of current working branch</item>
+        
+        <item >git status -s</item>
+        <item >git short status</item>
         
         <item >git add .</item>
-        <item >Tips: Stage all change files</item>
+        <item >Stage all change files</item>
         
         <item >git commit -m "message"</item>
-        <item >Tips: Commit changes with message</item>
+        <item >Commit changes with message</item>
         
         <item >git commit --amend</item>
-        <item >Tips: For amending the commit message</item>
+        <item >For amending the commit message</item>
         
         <item >git log --oneline</item>
-        <item >Tips: Pretty oneline log</item>
+        <item >Pretty oneline log</item>
         
         <item >git push origin [branch name]</item>
-        <item >Tips: origin-> remote repository link</item>
+        <item >origin-> remote repository link</item>
         
         <item >git push origin --delete [branch name]</item>
-        <item >Tips: Delete remote repository branch</item>
+        <item >Delete remote repository branch</item>
         
         <item >git push -f</item>
-        <item >Tips: Force push. f stands for force</item>
+        <item >Force push. f stands for force</item>
         
         <item >git remote rm origin</item>
-        <item >Tips: Remove "origin" ssh link. This name will be deleted from local git repository</item>
+        <item >Remove "origin" ssh link. This name will be deleted from local git repository</item>
         
         <item >git remote show origin</item>
-        <item >Tips: Shows the url saved as origin</item>
+        <item >Shows the url saved as origin</item>
         
         <item >git remote -v</item>
- 		<item >Tips: Shows all URLs</item>
+ 		<item >Shows all URLs</item>
 		
+ 		<item >git remote add origin “remote repository link”</item>
+ 		<item >origin = a name for remote repository link.</item>
+ 		
+ 		<item >git remote set-url origin git@github.com:username/projectname.git</item>
+ 		<item >Sets remote URL name as origin</item>
+ 		
 		<item >git branch</item>
-		<item >Tips: Shows current working branch name</item>
+		<item >Shows current working branch name</item>
 		
 		<item >git branch -a</item>
-		<item >Tips: Shows all branch in this GIT VCS</item>
+		<item >Shows all branch in this GIT VCS</item>
 		
 		<item >git branch "abc"</item>
 		<item >Create a new branch named "abc"</item>
 		
 		<item >git branch -d [branch name]</item>
-		<item >Tips: Delete local Branch</item>
+		<item >Delete local Branch</item>
 		
 		<item >git rebase -i</item>
 		<item >"i" means interactive. For reordering, squashing and other purpose</item> 
@@ -83,55 +105,92 @@
 		<item >Same as "git rebase -i"</item>  
 		
 		<item >git rebase -i [SHA]</item>
-		<item >Tips: Rebase to specific CL, reorder CLs. Then run$ git commit --all --amend --no-edit</item>
+		<item >Rebase to specific CL, reorder CLs. Then run$ git commit --all --amend --no-edit</item>
 		
 		<item >git rebase --abort</item>
 		<item >Abort previous rebase works</item> 
 		
 		<item >git rebase --continue</item>
-		<item >Tips: Continue previous rebase works. Before doing it please do-> git add .</item>
+		<item >Continue previous rebase works. Before doing it please do-> git add .</item>
+		
+		<item >git reset HEAD path/to/unwanted_file</item>
+		<item >Reset the unwanted files in order to leave them out from the commit</item>
 		
 		<item >git checkout</item>
-		<item >Tips: Total number of local commits ahead of remote origin</item>
+		<item >Total number of local commits ahead of remote origin</item>
 		
 		<item >git checkout [branch name]</item>
-		<item >Tips: To switch branch</item>
+		<item >To switch branch</item>
 		
 		<item >git checkout -- .</item>
-		<item >Tips: Remove all uncomitted changes</item>    
+		<item >Remove all uncomitted changes</item>    
 		
 		<item >git checkout [SHA]</item>
-		<item >Tips: Checkout to specific SHA</item>
+		<item >Checkout to specific SHA</item>
 		
 		<item >git clean -df</item>
-		<item >Tips: Delete all untracked files.</item>
+		<item >Delete all untracked files.</item>
 		
 		<item >git difftool</item>
-		<item >Tips: Open Diff tool to view differences</item>
+		<item >Open Diff tool to view differences</item>
+		
+		<item >git diff --cached</item>
+		<item >See diff of cached files. Press [Shift + zz] for getting out of terminal</item>
 		
 		<item >git pull</item>
-		<item >Tips: pull = fetch + merge</item>
+		<item >pull = fetch + merge</item>
 		
 		<item >git pull --rebase</item>
-		<item >Tips: git pull = fetch + merge. Fetch and merge to latest CL</item>
+		<item >git pull = fetch + merge. Fetch and merge to latest CL</item>
 		
 		<item >git revert "SHA2" "SHA1"</item>
-		<item >Tips: Use this when you have shared your codes. But you "MUST" revert your CL in Reverse order</item>
+		<item >Use this when you have shared your codes. But you "MUST" revert your CL in Reverse order</item>
         
 		<item >git merge [branch name]</item>
-		<item >Tips: Pulls [branch name] and melds/mixes/merges into current branch</item>
+		<item >Pulls [branch name] and melds/mixes/merges into current branch</item>
+		
+		<item >git merge --abort</item>
+		<item >Abort an ongoing merge</item>
+		
+		<item >git merge --squash devel</item>
+		<item >This commands squash’es devel branches all commit into one commit and merges into current branch.</item>
+		
+		<item >git mergetool</item>
+		<item >Run mergetool to resolve conflicts. Run mergetool to merge.</item>
 		
 		<item >git pull [ssh link] [branch name]</item>
-		<item >Tips: Just like merge branch but pulls from ssh link and merges into given branch. Always do a PULL before push in a team.</item>
+		<item >Just like merge branch but pulls from ssh link and merges into given branch. Always do a PULL before push in a team.</item>
 		
 		<item >git reset --hard</item>
-		<item >Tips: reset = Revert, Rollback. Permanently go back to previous commit. It deletes local commits. Use this if only you have not shared your code</item>
+		<item >reset = Revert, Rollback. Permanently go back to previous commit. It deletes local commits. Use this if only you have not shared your code</item>
 		
 		<item >git reset --hard [SHA]</item>
-		<item >Tips: </item>
+		<item >Parmanently revert this SHA</item>
+		
+		<item >git reset --hard HEAD^</item>
+		<item >HEAD - The commit I’m currently sitting on; HEAD^ - The commit’s parent; HEAD^^ - The commit’s grand parent. Dont USE --hard if you want to keep the changes.</item>
+		
+		<item >git reset --soft HEAD^</item>
+		<item >Moving the mistakenly committed files back to the staging area from the previous commit</item>
+		
+		<item >git reflog</item>
+		<item >Reference log</item>
+		
+		<item >git show</item>
+		<item >Shows info from git. To come out of terminal press [Shift + zz]</item>
+		
+		<item >git rm --cached [filename]</item>
+		<item >Remove chached file</item>
+		
+		<item >touch .gitignore</item>
+		<item >create the .gitingnore file. In windows we cant create a file without a name but with extension only. Touch = create new file with file name "something"</item>
+		
+		<item >git rev-list HEAD --count</item>
+		<item >Total Number of commits</item>
 		
 		<item >http://gerrithub.io/</item>
 		<item >Gerrit code review with github repositories.</item>
+
 		
     </string-array>
 
