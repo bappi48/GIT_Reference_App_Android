@@ -4,11 +4,11 @@
     <string name="app_name">Git Reference</string>
 
     <string-array name="git_full_list">
-        <item >git config --global user.name “Tanvir Hussain”</item>
-        <item >Set global user name</item>
+        <item > git config --global user.name "[name]"</item>
+        <item >Sets the name you want atached to your commit transactions</item>
         
-        <item >git config --global user.email “bappi.ruet.eee@gmail.com”</item>
-        <item >Set global user email</item>
+        <item >git config --global user.email "[email address]"</item>
+        <item >Sets the email you want atached to your commit transactions</item>
         
         <item >git config --global mergetool.keepBackup false</item>
         <item >Ask mergetool not to keep backup files after merging</item>
@@ -25,12 +25,22 @@
         <item >git config --get remote.origin.url</item>
         <item >Shows the remote URL</item>
         
-        <item >git config --global color.ui true</item>
-        <item >Configures terminal git command in color mood. Its pretty and helpful</item>
+        <item > git config --global color.ui auto</item>
+        <item >Enables helpful colorization of command line output. Its pretty and helpful</item>
         
-        <item >git log --graph</item>
+
         
-        <item >git log --decorate</item>
+        <item >git stash</item>
+        <item >Temporarily stores all modified tracked files</item>
+        
+        <item >git stash pop</item>
+        <item >Restores the most recently stashed files</item>
+        
+        <item >git stash list</item>
+        <item >Lists all stashed changesets</item>
+        
+        <item >git stash drop</item>
+        <item >Discards the most recently stashed changeset</item>
         
         <item >git stash save "message"</item>
         <item >Save all uncommitted changes with "message"</item>
@@ -38,29 +48,59 @@
         <item >git init</item>
         <item >Initialize a project for GIT version control</item>
         
-        <item >git init [project name / folder name]</item>
-        <item >Initialize a new project for GIT version control</item>
+        <item >git init [project-name]</item>
+        <item >Creates a new local repository with the specified name</item>
         
-        <item >git clone [remote repository]</item>
-        <item >Clones remote repository to local PC</item>
+        <item >git clone [url]</item>
+        <item >Downloads a project and its entire version history</item>
         
         <item >git status</item>
-        <item >Check status of current working branch</item>
+        <item >Lists all new or modified files to be commited</item>
         
         <item >git status -s</item>
         <item >git short status</item>
         
+        <item >git diff</item>
+        <item >Shows file differences not yet staged</item>
+        
+        <item >git diff --staged</item>
+        <item >Shows file differences between staging and the last file version</item>
+        
+        <item > git reset [file]</item>
+        <item >Unstages the file, but preserve its contents</item>
+        
+        <item >git reset [commit]</item>
+        <item >Undoes all commits afer [commit], preserving changes locally</item>
+        
         <item >git add .</item>
         <item >Stage all change files</item>
         
-        <item >git commit -m "message"</item>
-        <item >Commit changes with message</item>
+        <item > git add [file]</item>
+        <item >Snapshots the file in preparation for versioning</item>
+        
+        
+        
+        <item >git commit -m "[descriptive message]"</item>
+        <item >Records file snapshots permanently in version history</item>
         
         <item >git commit --amend</item>
         <item >For amending the commit message</item>
         
+        <item >git log</item>
+        <item >Lists version history for the current branch</item>
+        
+        <item >git log --follow [file]</item>
+        <item >Lists version history for a file, including renames</item>
+        
+        <item >git diff [first-branch]...[second-branch]</item>
+        <item >Shows content differences between two branches</item>
+        
         <item >git log --oneline</item>
         <item >Pretty oneline log</item>
+        
+        <item >git log --graph</item>
+        
+        <item >git log --decorate</item>
         
         <item >git push origin [branch name]</item>
         <item >origin-> remote repository link</item>
@@ -90,13 +130,13 @@
 		<item >Shows current working branch name</item>
 		
 		<item >git branch -a</item>
-		<item >Shows all branch in this GIT VCS</item>
+		<item >Lists all local branches in the current repository</item>
 		
-		<item >git branch "abc"</item>
-		<item >Create a new branch named "abc"</item>
+		<item >git branch [branch-name]</item>
+		<item >Creates a new branch</item>
 		
-		<item >git branch -d [branch name]</item>
-		<item >Delete local Branch</item>
+		<item >git branch -d [branch-name]</item>
+		<item >Deletes the specified branch</item>
 		
 		<item >git rebase -i</item>
 		<item >"i" means interactive. For reordering, squashing and other purpose</item> 
@@ -119,8 +159,8 @@
 		<item >git checkout</item>
 		<item >Total number of local commits ahead of remote origin</item>
 		
-		<item >git checkout [branch name]</item>
-		<item >To switch branch</item>
+		<item > git checkout [branch-name]</item>
+		<item >Switches to the specified branch and updates the working directory</item>
 		
 		<item >git checkout -- .</item>
 		<item >Remove all uncomitted changes</item>    
@@ -146,8 +186,8 @@
 		<item >git revert "SHA2" "SHA1"</item>
 		<item >Use this when you have shared your codes. But you "MUST" revert your CL in Reverse order</item>
         
-		<item >git merge [branch name]</item>
-		<item >Pulls [branch name] and melds/mixes/merges into current branch</item>
+		<item >git merge [branch]</item>
+		<item >Combines the specified branch’s history into the current branch</item>
 		
 		<item >git merge --abort</item>
 		<item >Abort an ongoing merge</item>
@@ -164,8 +204,8 @@
 		<item >git reset --hard</item>
 		<item >reset = Revert, Rollback. Permanently go back to previous commit. It deletes local commits. Use this if only you have not shared your code</item>
 		
-		<item >git reset --hard [SHA]</item>
-		<item >Parmanently revert this SHA</item>
+		<item > git reset --hard [commit]</item>
+		<item >Discards all history and changes back to the specified commit</item>
 		
 		<item >git reset --hard HEAD^</item>
 		<item >HEAD - The commit I’m currently sitting on; HEAD^ - The commit’s parent; HEAD^^ - The commit’s grand parent. Dont USE --hard if you want to keep the changes.</item>
@@ -173,14 +213,29 @@
 		<item >git reset --soft HEAD^</item>
 		<item >Moving the mistakenly committed files back to the staging area from the previous commit</item>
 		
+		<item >git fetch [bookmark]</item>
+		<item >Downloads all history from the repository bookmark</item>
+		
+		<item > git merge [bookmark]/[branch]</item>
+		<item >Combines bookmark’s branch into current local branch</item>
+		
 		<item >git reflog</item>
 		<item >Reference log</item>
 		
 		<item >git show</item>
 		<item >Shows info from git. To come out of terminal press [Shift + zz]</item>
 		
-		<item >git rm --cached [filename]</item>
-		<item >Remove chached file</item>
+		<item >git show [commit]</item>
+		<item >Outputs metadata and content changes of the specified commit</item>
+		
+		<item >git rm --cached [file]</item>
+		<item >Removes the file from version control but preserves the file locally</item>
+		
+		<item > git rm [file]</item>
+		<item >Deletes the file from the working directory and stages the deletion</item>
+		
+		<item > git mv [file-original] [file-renamed]</item>
+		<item >Changes the file name and prepares it for commit</item>
 		
 		<item >touch .gitignore</item>
 		<item >create the .gitingnore file. In windows we cant create a file without a name but with extension only. Touch = create new file with file name "something"</item>
