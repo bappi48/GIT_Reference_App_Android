@@ -78,13 +78,66 @@
         <item > git add [file]</item>
         <item >Snapshots the file in preparation for versioning</item>
         
+        <item >git tag -a [annotation] -m [message]</item>
+        <item >Add tag</item>
         
+        <item >git push origin --tags</item>
+        <item > This will transfer all of your tags to the remote server that are not already there.</item>
+        
+        <item >git add -i</item>
+        <item >Interactive staging</item>
+        
+        <item >rm -fr ~.git/rebase-merge </item>
+        <item >Incase previous rebase-merge is not going well, delete all previous related works.</item>
         
         <item >git commit -m "[descriptive message]"</item>
         <item >Records file snapshots permanently in version history</item>
         
+        <item >git commit -a -m “message”</item>
+        <item >Staging stage can be omitted. But a new file will not be added due to -a. We have to add new file manually.</item>
+        
         <item >git commit --amend</item>
         <item >For amending the commit message</item>
+        
+        <item >git blame [file-name]</item>
+        <item >Show what revision and author last modified each line of a file</item>
+        
+        <item >git cherry-pick [SHA]</item>
+        <item > Apply the changes introduced by some existing commits. Learn More: http://git-scm.com/docs/git-cherry-pick</item>
+        
+        <item >gitk</item>
+        <item >Shows branch history in GUI</item>
+        
+        <item >git gui</item>
+        <item >Git GUI tool</item>
+        
+        <item >git rebase --onto</item>
+        <item >Allows you to, in a non-interactive way, change the base of a commit, or rebase it.</item>
+        
+        <item >git rebase -i HEAD~xxx</item>
+        <item >Reorder commits</item>
+        
+        <item >git rebase --interactive HEAD~5</item>
+        <item >HEAH~5 -> Start position ->Total 5 commits before from HEAD.</item>
+        
+              
+        <item >git gui blame [file-name]</item>
+        <item >Shows the files last content change history line by line</item>
+        
+        <item >git gui browser maint</item>
+        <item >Show a browser for the tree of the maint branch. Files selected in the browser can be viewed with the internal blame viewer.</item>
+        
+        <item >git bisect</item>
+        <item >Find by binary search the change that introduced a bug</item>
+        
+        <item >git cherry-pick --continue</item>
+        <item >Continue the operation in progress</item>
+        
+        <item >git cherry-pick --abort</item>
+        <item >Cancel the operation and return to the pre-sequence state.</item>
+        
+        <item >git cherry-pick --quit</item>
+        <item >Forget about the current operation in progress.</item>
         
         <item >git log</item>
         <item >Lists version history for the current branch</item>
@@ -198,6 +251,9 @@
 		<item >git mergetool</item>
 		<item >Run mergetool to resolve conflicts. Run mergetool to merge.</item>
 		
+		<item >git notes add [commit]</item>
+		<item >To add a note to a specific commit</item>
+		
 		<item >git pull [ssh link] [branch name]</item>
 		<item >Just like merge branch but pulls from ssh link and merges into given branch. Always do a PULL before push in a team.</item>
 		
@@ -246,6 +302,8 @@
 		<item >http://gerrithub.io/</item>
 		<item >Gerrit code review with github repositories.</item>
 
+		<item >Fixing a previous bad commit:</item>
+		<item >git checkout [bad-commit]; git commit --amend -v; git rebase --onto HEAD [bad-commit] [checked-out-branch]</item>
 		
     </string-array>
 
