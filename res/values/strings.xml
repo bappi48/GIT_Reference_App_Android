@@ -27,9 +27,7 @@
         
         <item > git config --global color.ui auto</item>
         <item >Enables helpful colorization of command line output. Its pretty and helpful</item>
-        
-
-        
+                
         <item >git stash</item>
         <item >Temporarily stores all modified tracked files</item>
         
@@ -59,34 +57,19 @@
         
         <item >git status -s</item>
         <item >git short status</item>
-        
-        <item >git diff</item>
-        <item >Shows file differences not yet staged</item>
-        
-        <item >git diff --staged</item>
-        <item >Shows file differences between staging and the last file version</item>
-        
-        <item > git reset [file]</item>
-        <item >Unstages the file, but preserve its contents</item>
-        
-        <item >git reset [commit]</item>
-        <item >Undoes all commits afer [commit], preserving changes locally</item>
-        
+
         <item >git add .</item>
         <item >Stage all change files</item>
         
         <item > git add [file]</item>
         <item >Snapshots the file in preparation for versioning</item>
         
-        <item >git tag -a [annotation] -m [message]</item>
-        <item >Add tag</item>
-        
-        <item >git push origin --tags</item>
-        <item > This will transfer all of your tags to the remote server that are not already there.</item>
-        
         <item >git add -i</item>
         <item >Interactive staging</item>
         
+        <item >git tag -a [annotation] -m [message]</item>
+        <item >Add tag</item>      
+                
         <item >rm -fr ~.git/rebase-merge </item>
         <item >Incase previous rebase-merge is not going well, delete all previous related works.</item>
         
@@ -102,25 +85,14 @@
         <item >git blame [file-name]</item>
         <item >Show what revision and author last modified each line of a file</item>
         
-        <item >git cherry-pick [SHA]</item>
-        <item > Apply the changes introduced by some existing commits. Learn More: http://git-scm.com/docs/git-cherry-pick</item>
         
         <item >gitk</item>
         <item >Shows branch history in GUI</item>
         
         <item >git gui</item>
-        <item >Git GUI tool</item>
-        
-        <item >git rebase --onto</item>
-        <item >Allows you to, in a non-interactive way, change the base of a commit, or rebase it.</item>
-        
-        <item >git rebase -i HEAD~xxx</item>
-        <item >Reorder commits</item>
-        
-        <item >git rebase --interactive HEAD~5</item>
-        <item >HEAH~5 -> Start position ->Total 5 commits before from HEAD.</item>
-        
-              
+        <item >Git GUI tool</item>      
+
+                      
         <item >git gui blame [file-name]</item>
         <item >Shows the files last content change history line by line</item>
         
@@ -139,22 +111,19 @@
         <item >git cherry-pick --quit</item>
         <item >Forget about the current operation in progress.</item>
         
+        <item >git cherry-pick [SHA]</item>
+        <item > Apply the changes introduced by some existing commits. Learn More: http://git-scm.com/docs/git-cherry-pick</item>
+                
         <item >git log</item>
         <item >Lists version history for the current branch</item>
         
         <item >git log --follow [file]</item>
-        <item >Lists version history for a file, including renames</item>
-        
-        <item >git diff [first-branch]...[second-branch]</item>
-        <item >Shows content differences between two branches</item>
-        
+        <item >Lists version history for a file, including renames</item>        
+       
         <item >git log --oneline</item>
         <item >Pretty oneline log</item>
         
-        <item >git log --graph</item>
-        
-        <item >git log --decorate</item>
-        
+    
         <item >git push origin [branch name]</item>
         <item >origin-> remote repository link</item>
         
@@ -163,6 +132,9 @@
         
         <item >git push -f</item>
         <item >Force push. f stands for force</item>
+        
+        <item >git push origin --tags</item>
+        <item >This will transfer all of your tags to the remote server that are not already there.</item>
         
         <item >git remote rm origin</item>
         <item >Remove "origin" ssh link. This name will be deleted from local git repository</item>
@@ -204,10 +176,16 @@
 		<item >Abort previous rebase works</item> 
 		
 		<item >git rebase --continue</item>
-		<item >Continue previous rebase works. Before doing it please do-> git add .</item>
-		
-		<item >git reset HEAD path/to/unwanted_file</item>
-		<item >Reset the unwanted files in order to leave them out from the commit</item>
+		<item >Continue previous rebase works. Before doing it please do-> git add .</item>		
+	
+		<item >git rebase --onto</item>
+        <item >Allows you to, in a non-interactive way, change the base of a commit, or rebase it.</item>
+        
+        <item >git rebase -i HEAD~xxx</item>
+        <item >Reorder commits</item>
+        
+        <item >git rebase --interactive HEAD~5</item>
+        <item >HEAH~5 -> Start position ->Total 5 commits before from HEAD.</item>
 		
 		<item >git checkout</item>
 		<item >Total number of local commits ahead of remote origin</item>
@@ -230,12 +208,24 @@
 		<item >git diff --cached</item>
 		<item >See diff of cached files. Press [Shift + zz] for getting out of terminal</item>
 		
+		<item >git diff</item>
+        <item >Shows file differences not yet staged</item>
+        
+        <item >git diff --staged</item>
+        <item >Shows file differences between staging and the last file version</item>
+		
+        <item >git diff [first-branch]...[second-branch]</item>
+        <item >Shows content differences between two branches</item>
+		
 		<item >git pull</item>
 		<item >pull = fetch + merge</item>
 		
 		<item >git pull --rebase</item>
 		<item >git pull = fetch + merge. Fetch and merge to latest CL</item>
 		
+		<item >git pull [ssh link] [branch name]</item>
+		<item >Just like merge branch but pulls from ssh link and merges into given branch. Always do a PULL before push in a team.</item>
+				
 		<item >git revert "SHA2" "SHA1"</item>
 		<item >Use this when you have shared your codes. But you "MUST" revert your CL in Reverse order</item>
         
@@ -248,19 +238,19 @@
 		<item >git merge --squash devel</item>
 		<item >This commands squash’es devel branches all commit into one commit and merges into current branch.</item>
 		
+		<item >git merge [bookmark]/[branch]</item>
+		<item >Combines bookmark’s branch into current local branch</item>
+		
 		<item >git mergetool</item>
 		<item >Run mergetool to resolve conflicts. Run mergetool to merge.</item>
 		
 		<item >git notes add [commit]</item>
-		<item >To add a note to a specific commit</item>
-		
-		<item >git pull [ssh link] [branch name]</item>
-		<item >Just like merge branch but pulls from ssh link and merges into given branch. Always do a PULL before push in a team.</item>
+		<item >To add a note to a specific commit</item>		
 		
 		<item >git reset --hard</item>
 		<item >reset = Revert, Rollback. Permanently go back to previous commit. It deletes local commits. Use this if only you have not shared your code</item>
 		
-		<item > git reset --hard [commit]</item>
+		<item >git reset --hard [commit]</item>
 		<item >Discards all history and changes back to the specified commit</item>
 		
 		<item >git reset --hard HEAD^</item>
@@ -269,12 +259,18 @@
 		<item >git reset --soft HEAD^</item>
 		<item >Moving the mistakenly committed files back to the staging area from the previous commit</item>
 		
+		<item > git reset [file]</item>
+        <item >Unstages the file, but preserve its contents</item>
+        
+        <item >git reset [commit]</item>
+        <item >Undoes all commits afer [commit], preserving changes locally</item>
+		
+        <item >git reset HEAD path/to/unwanted_file</item>
+		<item >Reset the unwanted files in order to leave them out from the commit</item>
+        
 		<item >git fetch [bookmark]</item>
 		<item >Downloads all history from the repository bookmark</item>
-		
-		<item > git merge [bookmark]/[branch]</item>
-		<item >Combines bookmark’s branch into current local branch</item>
-		
+			
 		<item >git reflog</item>
 		<item >Reference log</item>
 		
