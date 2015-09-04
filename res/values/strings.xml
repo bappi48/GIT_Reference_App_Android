@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Git Reference</string>
+    <string name="app_name">Git Basic Reference</string>
 
     <string-array name="git_full_list">
-        <item > git config --global user.name "[name]"</item>
-        <item >Sets the name you want atached to your commit transactions</item>
+        <item >git config --global user.name "[name]"</item>
+        <item >Sets the name you want attached to your commit transactions</item>
         
         <item >git config --global user.email "[email address]"</item>
-        <item >Sets the email you want atached to your commit transactions</item>
+        <item >Sets the email you want attached to your commit transactions</item>
         
         <item >git config --global mergetool.keepBackup false</item>
         <item >Ask mergetool not to keep backup files after merging</item>
@@ -25,7 +25,7 @@
         <item >git config --get remote.origin.url</item>
         <item >Shows the remote URL</item>
         
-        <item > git config --global color.ui auto</item>
+        <item >git config --global color.ui auto</item>
         <item >Enables helpful colorization of command line output. Its pretty and helpful</item>
                 
         <item >git stash</item>
@@ -61,7 +61,7 @@
         <item >git add .</item>
         <item >Stage all change files</item>
         
-        <item > git add [file]</item>
+        <item >git add [file]</item>
         <item >Snapshots the file in preparation for versioning</item>
         
         <item >git add -i</item>
@@ -90,8 +90,7 @@
         <item >Shows branch history in GUI</item>
         
         <item >git gui</item>
-        <item >Git GUI tool</item>      
-
+        <item >Git GUI tool</item>    
                       
         <item >git gui blame [file-name]</item>
         <item >Shows the files last content change history line by line</item>
@@ -190,11 +189,11 @@
 		<item >git checkout</item>
 		<item >Total number of local commits ahead of remote origin</item>
 		
-		<item > git checkout [branch-name]</item>
+		<item >git checkout [branch-name]</item>
 		<item >Switches to the specified branch and updates the working directory</item>
 		
 		<item >git checkout -- .</item>
-		<item >Remove all uncomitted changes</item>    
+		<item >Remove all uncommitted changes</item>    
 		
 		<item >git checkout [SHA]</item>
 		<item >Checkout to specific SHA</item>
@@ -236,7 +235,7 @@
 		<item >Abort an ongoing merge</item>
 		
 		<item >git merge --squash devel</item>
-		<item >This commands squash’es devel branches all commit into one commit and merges into current branch.</item>
+		<item >This commands squashes devel branches all commit into one commit and merges into current branch.</item>
 		
 		<item >git merge [bookmark]/[branch]</item>
 		<item >Combines bookmark’s branch into current local branch</item>
@@ -259,11 +258,11 @@
 		<item >git reset --soft HEAD^</item>
 		<item >Moving the mistakenly committed files back to the staging area from the previous commit</item>
 		
-		<item > git reset [file]</item>
+		<item >git reset [file]</item>
         <item >Unstages the file, but preserve its contents</item>
         
         <item >git reset [commit]</item>
-        <item >Undoes all commits afer [commit], preserving changes locally</item>
+        <item >Undoes all commits after [commit], preserving changes locally</item>
 		
         <item >git reset HEAD path/to/unwanted_file</item>
 		<item >Reset the unwanted files in order to leave them out from the commit</item>
@@ -283,10 +282,10 @@
 		<item >git rm --cached [file]</item>
 		<item >Removes the file from version control but preserves the file locally</item>
 		
-		<item > git rm [file]</item>
+		<item >git rm [file]</item>
 		<item >Deletes the file from the working directory and stages the deletion</item>
 		
-		<item > git mv [file-original] [file-renamed]</item>
+		<item >git mv [file-original] [file-renamed]</item>
 		<item >Changes the file name and prepares it for commit</item>
 		
 		<item >touch .gitignore</item>
